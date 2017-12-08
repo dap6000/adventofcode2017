@@ -28,6 +28,9 @@ function split_on_comma(input) {
 function split_on_arrow(input) {
   return split_on(' -> ', input);
 }
+function split_on_if(input) {
+  return split_on(' if ', input);
+}
 // makes sure we are dealing with an array of integers
 function prep_digits(digits) {
   return split_on_empty(digits).map(int_parser);
