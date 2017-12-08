@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<title>Advent of Code - Day 3</title>
+		<meta charset="utf-8">
+  </head>
+  <body>
+    <p>Script output is in the console.</p>
+
+  </body>
+  <script src="../shared.js"></script>
+  <script src="share_the_load.js"></script>
+  <script>
+    const start = Date.now();
+
+    const test_banks = "0	2	7	0";
+    const test_steps = familiar(test_banks);
+    console.log("test_steps", test_steps, 5);
+
+    const puzzle_input = "4	1	15	12	0	9	9	5	5	8	7	3	14	5	12	3";
+    const answer = familiar(puzzle_input);
+    console.log("answer", answer);
+    const answer2 = familiar2(puzzle_input);
+    console.log("answer2", answer2);
+
+    const end = Date.now();
+    console.log("Ran in ", (end - start), " ms");
+  </script>
+</html>
