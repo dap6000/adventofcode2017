@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<title>Advent of Code - Day 3</title>
+		<meta charset="utf-8">
+  </head>
+  <body>
+    <p>Script output is in the console.</p>
+
+  </body>
+  <script src="../shared.js"></script>
+  <script src="manhattan_distance.js"></script>
+  <script>
+  const start = Date.now();
+
+  console.log(1, spiral_memory_steps(1));
+  console.log(12, spiral_memory_steps(12));
+  console.log(23, spiral_memory_steps(23));
+  console.log(1024, spiral_memory_steps(1024));
+  console.log(265149, spiral_memory_steps(265149));
+
+  const my_spiral = spiral_nodes();
+  console.log("First value greater than 265149: ", my_spiral[my_spiral.length - 1].V)
+
+  const end = Date.now();
+  console.log("Ran in ", (end - start), " ms");
+  </script>
+</html>
